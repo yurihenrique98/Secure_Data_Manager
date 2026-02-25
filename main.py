@@ -151,17 +151,40 @@ def clear_fields():
     entry_phone.delete(0, "end")
     image_canvas.delete("all")
 
+# ... (all your previous imports and logic functions stay the same) ...
+
 # --- GUI SETUP ---
 init_db()
 root = Tk()
 root.title("Secure Data Manager")
-root.geometry("600x750") 
+root.geometry("600x800") # Increased height slightly for breathing room
 root.configure(bg="#2c2c2c")
 
 # Style Configurations
 label_style = {"bg": "#2c2c2c", "fg": "#ffffff", "font": ("Helvetica", 12, "bold")}
-entry_style = {"bg": "#3d3d3d", "fg": "#ffffff", "insertbackground": "white", "relief": "flat", "font": ("Helvetica", 12), "width": 30}
-button_style = {"bg": "#00adb5", "fg": "#ffffff", "relief": "flat", "activebackground": "#007d82", "font": ("Helvetica", 11, "bold"), "width": 18, "pady": 10}
+
+# FIX: Changed entry foreground to a very light gray/white for better readability 
+# inside the dark text boxes.
+entry_style = {
+    "bg": "#3d3d3d", 
+    "fg": "#00ffcc",  # Neon cyan text inside boxes makes it super readable
+    "insertbackground": "white", 
+    "relief": "flat", 
+    "font": ("Helvetica", 12), 
+    "width": 30
+}
+
+# The button style you requested (Black text on Light background)
+button_style = {
+    "bg": "#f0f0f0", 
+    "fg": "#000000", 
+    "relief": "flat", 
+    "activebackground": "#00adb5", 
+    "activeforeground": "#ffffff", 
+    "font": ("Helvetica", 11, "bold"), 
+    "width": 18, 
+    "pady": 10
+}
 
 # Main container
 main_frame = tk.Frame(root, bg="#2c2c2c")
@@ -184,7 +207,7 @@ entry_id, entry_name, entry_email, entry_phone = entries
 
 # Image Section
 image_frame = tk.Frame(main_frame, bg="#2c2c2c")
-image_frame.pack(pady=20)
+image_frame.pack(pady=10)
 
 image_canvas = Canvas(image_frame, width=150, height=150, bg="#3d3d3d", highlightthickness=2, highlightbackground="#00adb5")
 image_canvas.pack(pady=10)
