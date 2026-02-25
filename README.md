@@ -1,6 +1,6 @@
 # Secure Data & Identity Manager (Python) 
 
-
+![App Preview](app_preview.png)
 
 A desktop application designed for secure customer data management, featuring symmetric encryption, binary data (BLOB) handling, and XML serialization.
 
