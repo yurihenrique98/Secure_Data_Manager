@@ -1,0 +1,8 @@
+# Security files
+secret.key
+*.db
+
+# Python system files
+__pycache__/
+*.pyc
+.DS_Store
