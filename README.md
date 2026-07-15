@@ -79,7 +79,7 @@ The main interface allows users to add, search, update and delete customer infor
 
 ## Customer Management
 
-![Customer Management](images/customerManagement.png)
+![Customer Management](images/customer-management.png)
 
 Customer information is managed through a CRUD interface connected directly to the SQLite database.
 
@@ -103,7 +103,7 @@ The application validates user input before storing records, preventing invalid 
 
 ## XML Storage
 
-![XML Storage](images/XML-Storage.png)
+![XML Storage](images/xml-storage.png)
 
 Customer records can be exported as XML, demonstrating data serialization and interoperability between different systems.
 
@@ -111,7 +111,7 @@ Customer records can be exported as XML, demonstrating data serialization and in
 
 ## Database Design
 
-![ER Diagram](images/ER-diagram.png)
+![ER Diagram](images/er-diagram.png)
 
 The database was designed using a relational model, supporting secure customer management and efficient data storage.
 
