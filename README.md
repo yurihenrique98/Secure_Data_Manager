@@ -16,7 +16,7 @@ This was an individual university project where I designed and developed the com
 
 ---
 
-## My Contributions
+## Main Features I Implemented 
 
 - Designed and developed the desktop application using Python and Tkinter.
 - Implemented SQLite database storage for customer records.
